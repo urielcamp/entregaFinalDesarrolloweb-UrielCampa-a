@@ -1,0 +1,39 @@
+
+.flex-container-deportes{
+	display: flex;
+	flex-direction: column;
+	margin: 20px 20px;
+	padding: 10px 10px;
+	min-height: 100vh;
+}
+
+.art-deport1, .art-deport2, .art-deport3, .art-deport4   {
+    @extend .noticiaIndex1;
+}
+
+.art-deport1{
+	grid-area: art1;
+}
+
+.art-deport2{
+	grid-area: art2;
+}
+
+.art-deport3{
+	grid-area: art3;
+}
+
+.art-deport4{
+	grid-area: art4;
+}
+
+.imgDepo1{
+    background-size: cover;
+	width: 100%;
+	height: 500px;
+}
+
+.imgDepo{
+    background-size: cover;
+	width: 100%;
+}

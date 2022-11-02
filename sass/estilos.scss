@@ -1,0 +1,187 @@
+@import "fuentes";
+@import "reset";
+@import "general";
+@import "index";
+@import "clima";
+@import "hover";
+@import "internacionales";
+@import "nacionales";
+@import "deportes";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:650px) {
+	.container1{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"in1 in1"
+		"in2 in4"
+		"in3 in3"
+		;
+	}
+	.containerIn3 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.proIn{
+		border-right: 2px solid #222831;
+	}
+
+	.containerClima {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.pronosticoClim{
+		border-right: 2px solid #222831;
+	}
+	.containerPro{
+		display: flex;
+		flex-direction: row;
+	}
+
+
+	.flex-container-deportes{
+		margin: 20px 20px;
+		padding: 10px 10px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: 
+		"art1 art1 art1 art1"
+		"art1 art1 art1 art1"
+		"art1 art1 art1 art1"
+		"art2 art2 art3 art3"
+		"art2 art2 art3 art3"
+		"art4 art4 art4 art4"
+		"art4 art4 art4 art4"
+		;
+	}
+
+	.flex-container-inter{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: 
+		"inter1 inter1 inter1 inter1"
+		"inter1 inter1 inter1 inter1"
+		"inter2 inter2 inter3 inter3"
+		"inter2 inter2 inter3 inter3"
+		;
+	}
+
+	.flex-container-nac{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: 
+		"nac1 nac1 nac1 nac1"
+		"nac1 nac1 nac1 nac1"
+		"nac2 nac2 nac3 nac3"
+		"nac2 nac2 nac3 nac3"
+		;
+	}
+
+}
+
+@media(min-width: 750px) {
+	.flex-container-clima{
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		grid-template-areas: 
+		"clima1 clima1 clima1 clima1 clima1 clima1 clima2 clima2 clima2 clima2"
+		"clima1 clima1 clima1 clima1 clima1 clima1 clima2 clima2 clima2 clima2"
+		"clima1 clima1 clima1 clima1 clima1 clima1 clima2 clima2 clima2 clima2"
+		"clima1 clima1 clima1 clima1 clima1 clima1 clima2 clima2 clima2 clima2"
+		;
+	}
+
+	.containerPro{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.pronosticoClim{
+		border-top: 2px solid #222831;
+		border-right: 0px;
+		margin: 15px 15px;
+		padding: 20px 20px;
+	}
+
+}
+
+@media(min-width: 1024px) {
+	.container1{
+		display: grid;
+		grid-template-columns: repeat(9, 1fr);
+		grid-template-areas: 
+		"in2 in2 in1 in1 in1 in1 in1 in3 in3"
+		"in2 in2 in1 in1 in1 in1 in1 in3 in3"
+		"in4 in4 in1 in1 in1 in1 in1 in3 in3"
+		"in4 in4 in1 in1 in1 in1 in1 in3 in3"
+		;
+	}
+
+	.containerIn3{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 100%;
+	}
+
+	.proIn {
+		border-top: solid #2C3639;
+		border-right: 0;
+		margin: 5px 5px;
+		padding: 5px 5px;
+	}
+
+	.flex-container-deportes{
+		display: grid;
+		grid-template-columns: repeat(9, 1fr);
+		grid-template-areas: 
+		"art1 art1 art1 art1 art1 art1 art1 art1 art1"
+		"art1 art1 art1 art1 art1 art1 art1 art1 art1"
+		"art2 art2 art4 art4 art4 art4 art4 art4 art4"
+		"art3 art3 art4 art4 art4 art4 art4 art4 art4"
+		;
+	}
+
+	.flex-container-inter{
+		display: grid;
+		grid-template-columns: repeat(9, 1fr);
+		grid-template-areas: 
+		"inter1 inter1 inter1 inter1 inter1 inter1 inter2 inter2 inter2"
+		"inter1 inter1 inter1 inter1 inter1 inter1 inter2 inter2 inter2"
+		"inter1 inter1 inter1 inter1 inter1 inter1 inter3 inter3 inter3"
+		"inter1 inter1 inter1 inter1 inter1 inter1 inter3 inter3 inter3"
+		;
+	}
+
+	.flex-container-nac{
+		display: grid;
+		grid-template-columns: repeat(9, 1fr);
+		grid-template-areas: 
+		"nac2 nac2 nac2 nac1 nac1 nac1 nac1 nac1 nac1"
+		"nac2 nac2 nac2 nac1 nac1 nac1 nac1 nac1 nac1"
+		"nac3 nac3 nac3 nac1 nac1 nac1 nac1 nac1 nac1"
+		"nac3 nac3 nac3 nac1 nac1 nac1 nac1 nac1 nac1"
+		;
+	}
+}

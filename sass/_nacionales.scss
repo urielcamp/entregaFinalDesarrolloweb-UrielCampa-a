@@ -1,0 +1,35 @@
+
+.flex-container-nac{
+    display: flex;
+	flex-direction: column;
+	margin: 20px 20px;
+	padding: 10px 10px;
+	min-height: 100vh;
+}
+
+.art-nac1, .art-nac2, .art-nac3{
+    @extend .noticiaIndex1;
+}
+
+.art-nac1{
+	grid-area: nac1;
+}
+
+.art-nac2{
+	grid-area: nac2;
+}
+
+.art-nac3{
+	grid-area: nac3;
+}
+
+.imgNac1{
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+}
+
+.imgNac {
+	background-size: cover;
+	width: 100%;
+}

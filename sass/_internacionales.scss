@@ -1,0 +1,23 @@
+.art-inter1, .art-inter2, .art-inter3{
+    @extend .noticiaIndex1;
+}
+.flex-container-inter{
+    display: flex;
+	flex-direction: column;
+	margin: 20px 20px;
+	padding: 10px 10px;
+	min-height: 100vh;
+}
+
+.art-inter1{
+	grid-area: inter1;
+}
+
+.art-inter2{
+	grid-area: inter2;
+}
+
+.art-inter3{
+	grid-area: inter3;
+}
+
